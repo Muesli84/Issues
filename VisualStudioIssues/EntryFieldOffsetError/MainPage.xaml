@@ -1,0 +1,36 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="EntryFieldOffsetError.MainPage">
+
+    <ScrollView>
+        <VerticalStackLayout
+            Spacing="25"
+            Padding="30,0"
+            VerticalOptions="Center">
+
+            <Image
+                Source="dotnet_bot.png"
+                SemanticProperties.Description="Cute dot net bot waving hi to you!"
+                HeightRequest="200"
+                HorizontalOptions="Center" />
+
+            <Label
+                Text="Tap on the entry field below at the end of the text and everything is fine."
+                SemanticProperties.HeadingLevel="Level1"
+                FontSize="12"
+                HorizontalOptions="Center" />
+
+            <Label
+                Text="Tap on the entry field below in the middle of text and an exception will be thrown."
+                SemanticProperties.HeadingLevel="Level1"
+                FontSize="12"
+                HorizontalOptions="Center" />
+
+            <Entry 
+                Text="Tap on this text"/>
+
+        </VerticalStackLayout>
+    </ScrollView>
+
+</ContentPage>
